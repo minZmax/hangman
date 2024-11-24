@@ -3,14 +3,14 @@ LABEL Maintainer="tengury5@gmail.com"
 WORKDIR /app
 
 # pip 최신 버전으로 업데이트
-RUN pip3 install --upgrade pip
+RUN pip install --upgrade pip
 
 # 파일 복사
 COPY app.py ./
 COPY requirements.txt ./
 
 # 의존성 설치
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # 포트 개방
 EXPOSE 4000

@@ -1,4 +1,4 @@
-FROM python:3.12-slim-buster
+FROM python:3.12-slim
 LABEL Maintainer="tengury5@gmail.com"
 WORKDIR /app
 

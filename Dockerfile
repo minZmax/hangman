@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.8-slim-buster
 LABEL Maintainer="tengury5@gmail.com"
 WORKDIR /app
 COPY app.py ./
